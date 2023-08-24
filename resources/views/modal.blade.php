@@ -15,6 +15,12 @@
         <button type="submit">Guardar</button>
     </form>
 </div>
+<h4>Fechas Guardadas:</h4>
+<ol>
+    @foreach ($fechas as $fecha)
+        <li>{{ $fecha->fecha }}</li>
+    @endforeach
+</ul>
 
 <script>
     function mostrarModal() {

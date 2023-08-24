@@ -9,7 +9,8 @@ class ModalController extends Controller
 {
     public function index()
     {
-        return view('modal');
+        $fechas = Fecha::all();
+        return view('modal',compact('fechas'));
     }
 
     public function guardarFecha(Request $request)
